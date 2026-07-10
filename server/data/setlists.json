@@ -1,0 +1,33 @@
+[
+  {
+    "id": "setlist_20260607_main",
+    "name": "2026-06-07 主日礼拝",
+    "date": "2026-06-07",
+    "serviceType": "主日礼拝",
+    "notes": "韓日メインで準備",
+    "updatedAt": "2026-06-10T10:00:00.000Z",
+    "items": [
+      {
+        "id": "setitem_1",
+        "songId": "song_open_eyes",
+        "order": 0,
+        "displayPreset": "ja_only",
+        "overrideKey": "E"
+      },
+      {
+        "id": "setitem_2",
+        "songId": "song_rugged_cross",
+        "order": 1,
+        "displayPreset": "ko_ja",
+        "overrideKey": "G"
+      },
+      {
+        "id": "setitem_3",
+        "songId": "song_holy_forever",
+        "order": 2,
+        "displayPreset": "ko_ja_en",
+        "overrideKey": "D"
+      }
+    ]
+  }
+]
