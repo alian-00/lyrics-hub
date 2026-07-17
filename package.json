@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "TMPDIR=/tmp PATH=/opt/homebrew/opt/node@22/bin:$PATH nuxt dev --host 127.0.0.1 --port 3000",
+    "dev": "if grep -qi microsoft /proc/version 2>/dev/null; then nuxt dev --host 0.0.0.0 --port 3000; else TMPDIR=/tmp PATH=/opt/homebrew/opt/node@22/bin:$PATH nuxt dev --host 127.0.0.1 --port 3000; fi",
+    "dev:mac": "TMPDIR=/tmp PATH=/opt/homebrew/opt/node@22/bin:$PATH nuxt dev --host 127.0.0.1 --port 3000",
+    "dev:wsl": "nuxt dev --host 0.0.0.0 --port 3000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "preview:wsl": "nuxt preview --host 0.0.0.0 --port 3000",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
